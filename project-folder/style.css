@@ -62,7 +62,8 @@ nav ul li a:hover {
 .hero-slider {
     position: relative;
     overflow: hidden;
-    height: 70vh;
+    height: 100vh;
+    
 }
 
 .hero-slide {
