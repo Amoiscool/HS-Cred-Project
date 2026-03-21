@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pokemon Website | Greninja</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- LIGHT BLUE FULL BACKGROUND -->
+    <style>
+        body {
+            margin: 0;
+            background: linear-gradient(135deg, #a8d8ff, #5aa9e6);
+            color: #fff;
+        }
+
+        .greninja-content {
+            padding: 4rem 0;
+        }
+
+        .greninja-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+        }
+
+        .greninja-top {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .greninja-top .about-image,
+        .greninja-top .about-text {
+            flex: 1 1 45%;
+        }
+
+        .greninja-content .card {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            color: #fff;
+            backdrop-filter: blur(6px);
+        }
+
+        .greninja-lore {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            color: #fff;
+            backdrop-filter: blur(6px);
+        }
+
+        a {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+    <div class="container header-container">
+        <div class="site-logo">
+            <a href="index.html">Pokemon Website</a>
+        </div>
+
+        <nav class="site-nav">
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+<!-- TITLE -->
+<section class="page-title section">
+    <div class="container">
+        <h1 style="text-align:center; text-decoration:underline; font-weight:normal; color:white;">
+            Greninja
+        </h1>
+    </div>
+</section>
+
+
+<!-- LIGHT BLUE SECTION -->
+<div class="greninja-content">
+
+    <div class="container greninja-wrapper">
+
+        <!-- TOP -->
+        <div class="greninja-top">
+
+            <!-- IMAGE -->
+            <div class="about-image">
+                <img src="images/greninja.jpeg" alt="Greninja" style="
+                    border-radius: 10px;
+                    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+                    width: 100%;
+                    display: block;
+                ">
+            </div>
+
+            <!-- BOXES -->
+            <div class="about-text">
+
+                <div class="card" style="margin-bottom: 1.5rem;">
+                    <h3>Water / Dark Type</h3>
+                    <p>
+                        Greninja moves like a ninja using stealth and speed.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Abilities</h3>
+                    <p>
+                        It can create water shuriken and blend into its surroundings.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- LORE -->
+        <div class="greninja-lore">
+            <h2 style="margin-bottom: 1rem;">Lore</h2>
+            <p>
+                Greninja is known as the ninja Pokémon, capable of disappearing in mist and striking with extreme precision.
+            </p>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- CTA -->
+<section class="cta-tab">
+    <div class="container">
+        <h2>Want to See More?</h2>
+        <p>Contact me today and discover more of my coding projects.</p>
+        <a href="contact.html" class="button">Get in Touch</a>
+    </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="site-footer">
+    <div class="container footer-container">
+        <p style="color:white;">&copy; Amogh Bhat 2026. All Rights Reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>

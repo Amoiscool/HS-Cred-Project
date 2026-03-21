@@ -444,3 +444,132 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+/* Center single card nicely */
+.single-card {
+    display: flex;
+    justify-content: center;
+}
+
+.single-card .card {
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Force single card to center */
+.card-container.single-card {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container.single-card .card {
+    max-width: 400px;
+    width: 100%;
+}
+
+
+
+
+/* Prevent horizontal scrolling on hover */
+body {
+    overflow-x: hidden;
+}
+
+
+
+/* Make featured card take up more space */
+.card-container.single-card .card {
+    max-width: 900px;   /* much wider */
+    width: 90%;         /* responsive */
+    padding: 3rem;
+}
+
+/* Make image more dominant */
+.card-container.single-card .card img {
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Increase text presence */
+.card-container.single-card .card h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.card-container.single-card .card p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+/* Optional: center text for a “featured” feel */
+.card-container.single-card .card {
+    text-align: center;
+}
+/* Center the image inside the featured card */
+.card-container.single-card .card img {
+    display: block;
+    margin: 0 auto 1rem auto;
+}
+
+/* Reset About Preview edits that broke layout */
+.about-preview .about-container {
+    display: block;
+    text-align: initial;
+}
+
+.about-preview .about-content {
+    max-width: none;
+}
+
+.about-preview .about-image {
+    display: block;
+    margin: 0;
+}
+
+
+/* Restore original alternating layout behavior */
+.about-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+}
+
+.about-section:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.about-section .about-text,
+.about-section .about-image {
+    flex: 1 1 45%;
+}
+/* Target ONLY the first about section image */
+.about-section:first-child .about-image {
+    display: flex;
+    justify-content: center;   /* center inside its column */
+}
+
+.about-section:first-child .about-image img {
+    width: 70%;      /* larger image */
+    max-width: 300px;
+}
+
+.cta-tab {
+    background-color: #f39c12;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin: 3rem 0;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.cta-tab a {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #fff;
+    color: #f39c12;
+    border-radius: 6px;
+    font-weight: bold;
+}
