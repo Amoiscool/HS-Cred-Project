@@ -1,1 +1,2 @@
-# HS-Cred-Project: This is a website about my favorite pokemon, coded by me based off of another project that I made. I hope you like it :D  /* Restore original alternating layout behavior */
+# HS-Cred-Project: This is a website about my favorite pokemon, coded by me based off of another project that I made. I hope you like it :D  
+in the morning add interactive javascript pokemon api fetcher and be like: find your favorite pokemon here.
