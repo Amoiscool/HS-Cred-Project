@@ -9,30 +9,24 @@
 
 <body>
 
-    
-    <header class="site-header">
-        <div class="container header-container">
-            
-            <div class="site-logo">
-                <a href="index.html">Pokemon Website</a>
-            </div>
-
-            <nav class="site-nav">
-                <ul class="nav-list">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-
+<header class="site-header">
+    <div class="container header-container">
+        <div class="site-logo">
+            <a href="index.html">Pokemon Website</a>
         </div>
-    </header>
 
+        <nav class="site-nav">
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
 <section class="hero-slider">
-
-    
     <div class="hero-slide" style="background-image: url('images/giratina.jpeg');">
         <div class="hero-content">
             <h1>Giratina</h1>
@@ -40,7 +34,7 @@
         </div>
     </div>
 
-    <div class="hero-slide" style="background-image: url('images/solgaleo\,lunala.jpeg');">
+    <div class="hero-slide" style="background-image: url('images/solgaleo,lunala.jpeg');">
         <div class="hero-content">
             <h1>Solgaleo & Lunala</h1>
             <p>The pair of legends from the Sun and Moon Era of Pokemon</p>
@@ -53,99 +47,65 @@
             <p>Classified as an Ultra Beast Pokemon, you can see why</p>
         </div>
     </div>
-
-    
-    <div class="hero-nav">
-        <span class="prev">&#10094;</span>
-        <span class="next">&#10095;</span>
-    </div>
-
 </section>
-   
-   
-<!-- Featured Pokemon Section -->
+
+<!-- Favorite Trio -->
 <section class="services">
     <div class="container">
         <h2>Favorite Trio</h2>
 
         <div class="card-container single-card">
-            
-            <a href="#" class="card">
-                <img src="images/emeraldtrio.jpeg" alt="Weather Trio"
+            <a href="weather-trio.html" class="card">
+                <img src="images/emeraldtrio.jpeg" alt="Weather Trio">
                 <h3>Kyogre-Rayquaza-Groudon</h3>
-                <p>My personal favorite trio because of the synergy they have. <p/><br>
-                <p>This image is so cool, I use it as my ipad's homescreen.</p>
+                <p>My personal favorite trio because of the synergy they have.</p>
+                <p>This image is so cool, I use it as my iPad's homescreen.</p>
             </a>
-
         </div>
     </div>
 </section>
-  
 
-      
+<section class="pokemon-search section">
+    <div class="container search-flex">
 
+        <!-- LEFT: Eternatus -->
+        <img id="eternatus-sprite" class="side-sprite" alt="Eternatus">
 
+        <!-- CENTER: Search -->
+        <div class="search-center">
+            <h2>View your favorite Pokémon Here! </h2>
 
-   
+            <input type="text" id="pokemon-search" placeholder="Enter Pokémon name">
+            <button id="search-btn" class="button">Search</button>
 
+            <p id="error-msg"></p>
 
-   
-
-    <section class="cta section">
-        <div class="container">
-            <h2>How Did I Do?</h2><br>
-            <p>Contact me today to give me feedback.</p><br>
-            <a href="contact.html" class="button">Get in Touch</a><br>
+            <!-- MAIN RESULT -->
+            <img id="pokemon-sprite" class="sprite" alt="Pokemon Sprite">
         </div>
-    </section>
 
-    <section class="contact-preview section">
-        <div class="container">
-            <h2>Contact Me</h2>
+        <!-- RIGHT: Genesect -->
+        <img id="genesect-sprite" class="side-sprite" alt="Genesect">
 
-            <form action="#" method="post" class="contact-form">
-                
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
+    </div>
+</section>
 
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-
-                
-                <div class="form-group">
-                    <label for="city">City</label>
-                    <input type="text" id="city" name="city" required>
-                </div>
-
-                
-                <div class="form-group">
-                    <label for="address">Address</label>
-                    <input type="text" id="address" name="address" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                </div>
-
-                <button type="submit" class="button">Send Message</button>
-
-            </form>
-        </div>
-    </section>
+<section class="cta section">
+    <div class="container">
+        <h2>How Did I Do?</h2>
+        <p>Contact me today to give me feedback.</p>
+        <a href="contact.html" class="button">Get in Touch</a>
+    </div>
+</section>
 
 
-    
-    <footer class="site-footer">
-        <div class="container footer-container">
-            <p>&copy; Amogh Bhat 2026. All Rights Reserved.</p>
-        </div>
-    </footer>
+<footer class="site-footer">
+    <div class="container footer-container">
+        <p>&copy; Amogh Bhat 2026. All Rights Reserved.</p>
+    </div>
+</footer>
 
+<script src="main.js"></script>
 
 </body>
 </html>

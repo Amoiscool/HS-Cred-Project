@@ -323,9 +323,22 @@ nav ul li a:hover {
     background-color: #f39c12;
     color: #fff;
     text-align: center;
-    padding: 3rem 1rem;
-    border-radius: 10px;
-    margin: 4rem 0;
+    padding: 30px 20px;   /* bigger + cleaner spacing */
+    margin: 0;            /* removes weird outer gaps */
+    border-radius: 0;     /* makes it full-width clean banner */
+}
+
+.cta h2 {
+    margin-bottom: 15px;
+}
+
+.cta p {
+    margin-bottom: 20px;
+}
+
+.cta a {
+    display: inline-block;
+    margin-top: 10px;
 }
 
 .cta h2 {
@@ -572,4 +585,87 @@ body {
     color: #f39c12;
     border-radius: 6px;
     font-weight: bold;
+}
+
+/* SEARCH SECTION */
+.pokemon-search {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.pokemon-search input {
+    padding: 10px;
+    width: 250px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.pokemon-search .button {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#error-msg {
+    color: red;
+    margin-top: 10px;
+    display: none;
+}
+
+/* 🔥 ANIMATION */
+@keyframes shimmy {
+    0% { transform: rotate(-20deg); }
+    50% { transform: rotate(20deg); }
+    100% { transform: rotate(-20deg); }
+}
+
+.sprite {
+    width: 250px;
+    display: none;
+    margin: 20px auto;
+
+    animation: 
+        popIn 0.4s ease-out,
+        shimmy 2s infinite;
+
+    transform: rotate(-20deg);
+}
+
+@keyframes popIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.5) rotate(-20deg);
+    }
+    70% {
+        opacity: 1;
+        transform: scale(1.1) rotate(-20deg);
+    }
+    100% {
+        transform: scale(1) rotate(-20deg);
+    }
+}
+
+/* Layout for left + center + right */
+.search-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+/* Center content */
+.search-center {
+    text-align: center;
+}
+
+/* Side Pokémon (Genesect & Eternatus) */
+.side-sprite {
+    width: 150px;
+    animation: shimmy 2s infinite;
+}
+
+/* Responsive (stack on small screens) */
+@media (max-width: 768px) {
+    .search-flex {
+        flex-direction: column;
+    }
 }
